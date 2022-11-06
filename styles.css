@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "JosefinSans";
+    src: url(../fonts/JosefinSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "JosefinSans";
+    src: url(../fonts/JosefinSans-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    min-height: 100vh;
+    color: white;
+    font-family: "JosefinSans";
+}
+
+#left {
+    width: 35%;
+    background-color: #5e0527;
+    background-image: url(img/paul-calescu-KW3m50XRhjk-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#right {
+    background: linear-gradient(108deg, rgb(97 16 38) 0%, rgb(51, 58, 75) 50%, rgb(3 16 42) 100%);
+    width: 65%;
+    padding: 20px 0 20px 0;
+}
+
+form {
+    margin-top: 5%;
+}
+
+label {
+    font-size: 0.75rem;
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+input {
+    border-radius: 4px;
+    border: 2px solid grey;
+    width: min(250px, 23vw);
+    height: 1.4rem;
+    font-family: "JosefinSans";
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+input:focus {
+    outline: 2.5px solid rgba(54, 175, 255, 0.901);
+}
+
+#form {
+    background-color: rgba(37, 37, 37, 0.5);
+    padding: 0.3vw 2vw 2vw 3.8vw;
+}
+
+#formH {
+    font-size: 1.75rem;
+}
+
+.form-row {
+    display: grid;
+    align-items: end;
+    grid-template-columns: repeat(2, 0fr);
+    grid-gap: 2vw;
+}
+
+a {
+    color: rgb(102, 143, 255);
+}
+
+#paraBfF {
+        margin-top: 10vh;
+        font-size: min(1.75rem, 6vw);
+        width: min(60vw, 860px);
+}
+
+#banner {
+    background-image: url(img/cover.png);
+    height: 12vw;
+    background-size: cover;
+    background-position: center;
+    margin-top: 4vw;
+    mix-blend-mode: hard-light;
+    background-color: rgb(221 212 212 / 30%);
+    background-blend-mode: luminosity;
+}
+
+#cLink {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 1.1rem;
+    padding: 7px;
+}
+
+#login_for_user {
+    font-size: 1.15rem;
+    display: block;
+}
+
+.btn {
+    margin: 30px 20px 40px;
+    padding: 10px 35px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 5px 1px rgba(54, 175, 255, 0.829);
+}
+
+.mL2 {
+    margin-left: 3.8vw;
+}
+
+.error {
+    border-color: rgba(255, 63, 38, 0.808);
+    box-shadow: 0px 0px 3px 1px rgb(255, 63, 38);
+}
+
+.correct {
+    border-color: rgba(38, 255, 49, 0.808);
+    box-shadow: 0px 0px 3px 1px rgb(38, 255, 49);
+}
